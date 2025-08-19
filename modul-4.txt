@@ -1,0 +1,19 @@
+Nauczyć się wyszukiwać powtarzalne elementy (np. karty ogłoszeń) i z nich wyciągać konkretne dane (tytuł + link).
+
+🧒 Wyjaśnienie dla 5-latka
+
+Na stronie z ogłoszeniami masz wiele „kartek” 📄 – każda z tytułem i linkiem.
+Chcemy, żeby komputer znalazł wszystkie kartki, a potem z każdej przeczytał tytuł i adres.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Strony z listami ogłoszeń mają powtarzający się wzorzec HTML – np. <article>, <div class="item"> albo podobne.
+W BS4:
+
+soup.select("CSS") → znajdziemy listę elementów.
+
+Potem w pętli .get_text() i .get("href").
+
+Na stronie fundusze.ngo.pl/aktualne
+ ogłoszenia są w kartach <article>.
+Każda karta ma nagłówek <h3> z linkiem <a>.
