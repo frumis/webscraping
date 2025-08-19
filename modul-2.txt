@@ -1,0 +1,16 @@
+Wyjaśnienie dla 5-latka
+
+Strona internetowa to jak klocki LEGO. Masz dużo małych elementów (np. tytuły, linki, obrazki).
+BeautifulSoup to lupa 🔍, dzięki której możesz znaleźć ten klocek, który chcesz – np. wszystkie tytuły artykułów.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+HTML to drzewo elementów (DOM). Każdy element ma tagi (<div>, <a>, <p> itd.).
+Biblioteka BeautifulSoup4 pozwala to drzewo czytać i przeszukiwać.
+Podstawowe metody:
+
+soup = BeautifulSoup(html, "lxml") → tworzy obiekt z kodu HTML.
+
+soup.title → znajdzie <title> strony.
+
+soup.get_text() → zwróci sam tekst (bez znaczników).

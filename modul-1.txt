@@ -1,0 +1,15 @@
+Wyobraź sobie, że masz listonosza, który przynosi listy.
+Mówisz mu: „Przynieś mi gazetę z tej ulicy”.
+On wraca i mówi: „Mam gazetę” (to jest strona) albo „Nie udało się, adres nie istnieje” (to jest błąd).
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Biblioteka requests pozwala wysyłać żądania HTTP w Pythonie.
+Podstawowa funkcja to requests.get(url), która zwraca obiekt Response.
+Możesz sprawdzić:
+
+response.status_code → czy strona się załadowała (200 = OK).
+
+response.text → treść strony (HTML jako string).
+
+To jest pierwszy krok każdego scrapera.

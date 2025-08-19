@@ -1,0 +1,21 @@
+Nauczyć się korzystać z metod select() i get_text() do wybierania fragmentów strony (np. nagłówki, linki).
+
+🧒 Wyjaśnienie dla 5-latka
+
+Wyobraź sobie półkę z książkami 📚. Każda książka ma tytuł.
+Mówisz: „Pokaż mi wszystkie tytuły z półki”.
+BeautifulSoup potrafi tak zrobić – wybiera wszystkie elementy, które wyglądają jak tytuły.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+HTML składa się z tagów z klasami i atrybutami.
+select("css_selector") pozwala znaleźć elementy przy pomocy selektorów CSS (tak jak w frontendzie).
+Potem .get_text(strip=True) wyciąga sam tekst, bez znaczników i spacji.
+
+Przykład:
+
+soup.select("h2") → wszystkie nagłówki <h2>.
+
+soup.select(".title") → elementy z klasą title.
+
+soup.select("a") → wszystkie linki.
