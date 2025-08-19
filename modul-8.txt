@@ -1,0 +1,23 @@
+Nauczyć scraper przechodzić przez kolejne strony („Następna strona”).
+
+Oddzielić ustawienia (URL, limity) do pliku .env, żeby kod był czysty.
+
+🧒 Wyjaśnienie dla 5-latka
+
+Wyobraź sobie książkę 📖. Strona 1 ma tylko część bajki.
+Żeby przeczytać całość, musisz przerzucać kartki na stronę 2, 3, 4...
+Scraper robi to samo – musi klikać „następna strona”.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Stronicowanie oznacza, że adres URL ma parametr ?page=2, ?page=3 itd.
+
+W pętli budujemy adresy i pobieramy kolejne strony.
+
+Kończymy, gdy strona jest pusta lub osiągamy limit (np. 5 stron).
+
+Dodatkowo:
+
+Ustawienia (BASE_URL, MAX_PAGES) trzymamy w pliku .env.
+
+Do odczytu .env służy biblioteka python-dotenv.

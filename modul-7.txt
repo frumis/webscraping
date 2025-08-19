@@ -1,0 +1,23 @@
+Nauczyć się, jak sprawić, żeby scraper działał stabilnie i bezpiecznie:
+
+nie zawieszał się przy błędach,
+
+nie spamował serwera,
+
+był grzeczny (User-Agent, przerwy między żądaniami).
+
+🧒 Wyjaśnienie dla 5-latka
+
+Wyobraź sobie, że dzwonisz do kolegi.
+Czasem nie odbiera 📵 – wtedy próbujesz jeszcze raz, ale nie 100 razy pod rząd, tylko po chwili.
+Tak samo scraper musi umieć: poczekać, spróbować ponownie, a jak się nie da – grzecznie się poddać.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Timeout → mówi, ile maksymalnie czekamy na odpowiedź serwera (np. 10 sekund).
+
+Retry → jeśli błąd (np. 500, 503), spróbuj ponownie (ale max 3 razy).
+
+Sleep → robimy przerwy między żądaniami (np. time.sleep(1)).
+
+User-Agent → podszywamy się pod przeglądarkę, żeby serwer wiedział, kto pyta.

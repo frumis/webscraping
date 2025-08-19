@@ -1,0 +1,31 @@
+Nauczyć się porządkować dane:
+
+daty w formacie YYYY-MM-DD,
+
+kwoty jako liczby całkowite (int),
+
+kategorie jako listy.
+
+🧒 Wyjaśnienie dla 5-latka
+
+Wyobraź sobie, że masz pudełko z klockami Lego, ale wszystkie są pomieszane.
+Jedne są opisane „trzy czerwone”, inne „3 czerwone”.
+Musisz je posortować tak, żeby wszystko wyglądało tak samo – np. „3 czerwone klocki”.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Strony często podają dane w różnych formatach:
+
+Data: „20 września 2025” → musimy zamienić na 2025-09-20.
+
+Kwota: „50 000 zł” → usuwamy spacje i „zł”, zostaje 50000.
+
+Kategorie: np. „Edukacja, Sport” → zamieniamy na listę ["Edukacja", "Sport"].
+
+W Pythonie:
+
+do dat: datetime.strptime() i strftime(),
+
+do kwot: re.sub(r"\D", "", tekst) żeby zostawić tylko cyfry,
+
+do kategorii: .split(",") i .strip().

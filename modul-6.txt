@@ -1,0 +1,18 @@
+Nauczyć się zapisywać zebrane dane do pliku w formacie CSV i XLSX, żeby można było je otworzyć w Excelu.
+
+🧒 Wyjaśnienie dla 5-latka
+
+Wyobraź sobie, że zbierasz naklejki do albumu.
+Masz już wszystkie naklejki w ręce, ale musisz je przykleić do zeszytu, żeby ich nie zgubić.
+CSV/XLSX to właśnie taki „zeszyt”, gdzie trzymasz swoje dane.
+
+👩‍💻 Wyjaśnienie dla juniora
+
+Do pracy z tabelami użyjemy pandas.
+Podstawowe kroki:
+
+Stworzyć listę słowników (każdy słownik = jedno ogłoszenie).
+
+Wrzucić to do pandas.DataFrame.
+
+Zapisać do CSV lub Excel: .to_csv("plik.csv", index=False) albo .to_excel("plik.xlsx", index=False).
